@@ -1,0 +1,73 @@
+body {
+    font-family: 'Roboto Mono', monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f2f8c6;
+}
+p{
+   
+    font-size: 1.4rem;
+}
+.ticTacToeBoard {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 5px;   
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.4rem;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    transition: background-color 0.3s;
+}
+.cell:hover {
+    background-color: #e0e0e0;
+}
+
+.cell.X {
+    color: rgb(226, 66, 66);
+}
+
+.cell.O {
+    color: rgb(84, 84, 223);
+}
+.scoreboard {
+    text-align: center;
+}
+.botones{
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.replay, .reset {
+    font-size: 16px;
+    margin: 10px 20px;
+    cursor: pointer;
+    padding: 5px 10px;
+    background-color: #f9f115;
+    border-radius: 5px;
+}
+
+.replay:hover, .reset:hover {
+    background-color: #dfef65;
+}
+
+.winnerMessage {
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: green;
+}
